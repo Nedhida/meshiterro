@@ -2,7 +2,7 @@
  <%= form_with model:@user, local:true do |f| %>
    <ladel for="inputName">Name</ladel>
    <%= f.text_field :name, autofocus: true, id:"inputName", placeholder:"名前"%>
-   <%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg",  size: "100x100" %>
+   <%= attachment_image_tag @user, :profile_image, fallback: "no_image.jpg", size: "100x100" %>
    <ladel for="inputName">ProfileImage</ladel>
    <%= f.attachment_field :profile_image, placeholder: "プロフィール画像" %>
 
